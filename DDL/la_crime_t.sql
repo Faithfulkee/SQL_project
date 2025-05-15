@@ -1,0 +1,40 @@
+DROP DATABASE IF EXISTS LA_CRIME;
+CREATE DATABASE LA_CRIME;
+USE LA_CRIME;
+
+CREATE TABLE la_crime_t (
+    report_no INT,
+    incident_time TIME,
+    complaint_type VARCHAR(50),
+    cctv_flag VARCHAR(5),
+    precinct_code INT,
+    area_code INT,
+    area_name VARCHAR(50),
+    cctv_count INT,
+    population_density INT,
+    rounds_per_day INT,
+    crime_code INT,
+    crime_type VARCHAR(100),
+    weapon_code INT,
+    weapon_desc VARCHAR(100),
+    case_status_code VARCHAR(10),
+    case_status_desc VARCHAR(50),
+    victim_code INT,
+    victim_name VARCHAR(50),
+    victim_sex CHAR(1),
+    victim_age INT,
+    was_victim_alone VARCHAR(3),
+    is_victim_insured VARCHAR(3),
+    offender_code INT,
+    offender_name VARCHAR(50),
+    offender_sex CHAR(1),
+    offender_age INT,
+    repeated_offender VARCHAR(3),
+    no_of_offences INT,
+    offender_relation VARCHAR(50),
+    officer_code INT,
+    officer_name VARCHAR(50),
+    officer_sex CHAR(1),
+    avg_close_days INT,
+    week_number INT
+);
